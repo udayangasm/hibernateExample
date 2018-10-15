@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name = "AOP.testHibernate.Customer" table = "Customer">
+
+<id name = "id" type = "int">
+	<column name = "ID" />
+	<generator class = "increment"/>
+</id>
+<property name = "name" type = "java.lang.String">
+	<column name = "name"/>
+</property>
+
+<property name = "nic" type = "java.lang.String">
+	<column name = "nic"/>
+</property>
+
+<property name = "address" type = "java.lang.String">
+	<column name = "address"/>
+</property>
+
+<property name = "tp" type = "java.lang.String">
+	<column name = "tp"/>
+</property>
+
+<property name = "active" type = "char">
+	<column name = "active"/>
+</property>
+
+<property name = "createdDate" type = "java.util.Date">
+	<column name = "createdDate"/>
+</property>
+
+
+
+
+</class>
+</hibernate-mapping>
